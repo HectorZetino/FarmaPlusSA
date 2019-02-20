@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmaPlusSA", "FarmaPlusSA\FarmaPlusSA.csproj", "{D25B1B0D-4EA1-4624-8F35-F899F134CCD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearStructures", "LinearStructures\LinearStructures.csproj", "{73F822A9-EFDF-4FEA-9CCE-68E5A99778BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D25B1B0D-4EA1-4624-8F35-F899F134CCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D25B1B0D-4EA1-4624-8F35-F899F134CCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D25B1B0D-4EA1-4624-8F35-F899F134CCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F822A9-EFDF-4FEA-9CCE-68E5A99778BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F822A9-EFDF-4FEA-9CCE-68E5A99778BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F822A9-EFDF-4FEA-9CCE-68E5A99778BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F822A9-EFDF-4FEA-9CCE-68E5A99778BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
