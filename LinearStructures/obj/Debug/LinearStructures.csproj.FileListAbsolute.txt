@@ -1,6 +1,0 @@
-C:\Users\leste\source\repos\FarmaPlusSA\LinearStructures\bin\Debug\LinearStructures.dll
-C:\Users\leste\source\repos\FarmaPlusSA\LinearStructures\bin\Debug\LinearStructures.pdb
-C:\Users\leste\source\repos\FarmaPlusSA\LinearStructures\obj\Debug\LinearStructures.csprojAssemblyReference.cache
-C:\Users\leste\source\repos\FarmaPlusSA\LinearStructures\obj\Debug\LinearStructures.csproj.CoreCompileInputs.cache
-C:\Users\leste\source\repos\FarmaPlusSA\LinearStructures\obj\Debug\LinearStructures.dll
-C:\Users\leste\source\repos\FarmaPlusSA\LinearStructures\obj\Debug\LinearStructures.pdb
