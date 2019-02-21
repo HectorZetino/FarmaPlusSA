@@ -1,3 +1,0 @@
-1,Juan_Morales,10,1,5000#2,Pedro Molina,5,0,4500#3,Brayan Roldan,11,1,10000#4,Julio Marroquin,6,0,5500#5,Alejandro Pocasangre,8,1,3500#6,Mario Molden,9,1,6000#7,Jobs Steren,13,0,3500#8,Luis Vuiton,15,0,3600#9,Alejandro Pocasangre,8,1,3500#10,Mario Molden,9,1,6000
-
-
