@@ -48,5 +48,34 @@ namespace FarmaPlusSA.Controllers
             HttpContext.Application["CitasTrabajador"] = viewModel;
             return View(viewModel);
         }
+        [HttpPost]
+        public ActionResult Trabajadores(string Nombre)
+        {
+            var viewModel = (citasTrabajador)HttpContext.Application["CitasTrabajador"];
+            viewModel.Trabajdores.Add(new Trabajador
+            {
+                Nombre = Nombre, horasTrabajadas = 0, estaEnOficina = false, Citas = new List<Citas>(0)
+            });
+            return View(viewModel);
+        }
+        [HttpGet]
+        public ActionResult Citas()
+        {
+            var viewModel = new citasTrabajador
+            {
+                Trabajdores = new List<Trabajador>
+                {
+                    new Trabajador {Nombre = "Lester", horasTrabajadas = 0, estaEnOficina = true, Citas = new List<Citas>(0)}
+                }
+            };
+
+            if (HttpContext.Application["CitasTrabajador"] != null)
+            {
+                viewModel = (citasTrabajador)HttpContext.Application["CitasTrabajador"];
+            }
+
+            HttpContext.Application["CitasTrabajador"] = viewModel;
+            return View(viewModel);
+        }
     }
 }
