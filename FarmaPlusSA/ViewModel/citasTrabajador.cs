@@ -8,6 +8,6 @@ namespace FarmaPlusSA.ViewModel
 {
     public class citasTrabajador
     {
-        public List<Trabajador> Trabajdores { get; set; }
+        public List<Trabajador> Trabajadores { get; set; }
     }
 }
