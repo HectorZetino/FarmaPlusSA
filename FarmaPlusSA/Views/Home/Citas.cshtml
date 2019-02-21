@@ -1,0 +1,26 @@
+﻿@model FarmaPlusSA.ViewModel.citasEmpleado
+
+@{
+    ViewBag.Title = "Citas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Citas</h2>
+<form action="" method="post">
+    <input type="submit" name="upvote" value="Asignar citas" />
+</form>
+<hr />
+<ul>
+    @foreach (var empleado in @Model.Empleados)
+    {
+        <li>
+            @empleado.Nombre
+            <ul>
+                @foreach (var cita in @empleado.Citas)
+                {
+                    <li>@cita.Cliente - @cita.horaFecha</li>
+                }
+            </ul>
+        </li>
+    }
+</ul>

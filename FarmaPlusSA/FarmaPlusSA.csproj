@@ -130,7 +130,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cita.cs" />
+    <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\trabajadorRegistrado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\citasEmpleado.cs" />
+    <Compile Include="ViewModel\jornadasEmpleados.cs" />
+    <Compile Include="ViewModel\registrosEmpleado.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -168,10 +174,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Citas.cshtml" />
+    <Content Include="Views\Home\Empleados.cshtml" />
+    <Content Include="Views\Home\empleadosRegistrados.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
