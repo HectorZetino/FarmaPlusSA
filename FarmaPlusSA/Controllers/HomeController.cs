@@ -97,5 +97,42 @@ namespace FarmaPlusSA.Controllers
             HttpContext.Application["CitasEmpleado"] = viewModel;
             return View(viewModel);
         }
+
+        //codigo para leer Archivos de Texto Separados Por comas
+        /* public ActionResult Index(HttpPostedFileBase postedFile)
+        {
+            List<Trabajador> trabajador = new List<Trabajador>();
+            string filePath = string.Empty;
+            if (postedFile != null)
+            {
+                string path = Server.MapPath("~/uploads/");
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+                filePath = path + Path.GetFileName(postedFile.FileName);
+                string extension = Path.GetExtension(postedFile.FileName);
+                postedFile.SaveAs(filePath);
+
+                string csvData = System.IO.File.ReadAllText(filePath);
+                foreach (string row in csvData.Split('#'))
+                {
+                        if (!string.IsNullOrEmpty(row))
+                        {
+                            trabajador.Add(new Trabajador
+                            {
+                                Cod_empleado = row.Split(',')[0],
+                                Nombre = row.Split(',')[1],
+                                Total_horas_trabajadas = Convert.ToDouble(row.Split(',')[2]),
+                                EstadiaOficina = row.Split(',')[3],
+                                Salario = Convert.ToDouble(row.Split(',')[4])
+                            });
+                        }
+                }
+                
+            }
+            return View(trabajador);
+        }
+         */
     }
 }
