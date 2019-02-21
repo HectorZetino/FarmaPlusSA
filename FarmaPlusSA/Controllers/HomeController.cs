@@ -34,7 +34,7 @@ namespace FarmaPlusSA.Controllers
         {
             var viewModel = new citasTrabajador
             {
-                Trabajdores = new List<Trabajador>
+                Trabajadores = new List<Trabajador>
                 {
                     new Trabajador {Nombre = "Fabrizzio", horasTrabajadas = 0, estaEnOficina = false, Citas = new List<Citas>(0)}
                 }
@@ -52,7 +52,7 @@ namespace FarmaPlusSA.Controllers
         public ActionResult Trabajadores(string Nombre)
         {
             var viewModel = (citasTrabajador)HttpContext.Application["CitasTrabajador"];
-            viewModel.Trabajdores.Add(new Trabajador
+            viewModel.Trabajadores.Add(new Trabajador
             {
                 Nombre = Nombre, horasTrabajadas = 0, estaEnOficina = false, Citas = new List<Citas>(0)
             });
@@ -63,7 +63,7 @@ namespace FarmaPlusSA.Controllers
         {
             var viewModel = new citasTrabajador
             {
-                Trabajdores = new List<Trabajador>
+                Trabajadores = new List<Trabajador>
                 {
                     new Trabajador {Nombre = "Lester", horasTrabajadas = 0, estaEnOficina = true, Citas = new List<Citas>(0)}
                 }
@@ -82,7 +82,7 @@ namespace FarmaPlusSA.Controllers
         {
             var viewModel = (citasTrabajador)HttpContext.Application["CitasTrabajador"];
             Random rnd = new Random();
-            foreach (var trabajador in viewModel.Trabajdores)
+            foreach (var trabajador in viewModel.Trabajadores)
             {
                 var nCitas = rnd.Next(1, 3);
                 for (int o = 0; o < nCitas; o++)
